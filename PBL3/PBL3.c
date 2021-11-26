@@ -336,7 +336,7 @@ int main()
 						system("cls");
 						mass_energy:
 
-							printf("Mass Energy: ");
+						mass_change();
 						printf("Do you want to repeat ? (y/n)\n");
 						printf("\tChoice:");
 						scanf(" %c", &ch);
@@ -356,7 +356,7 @@ int main()
 					case 2:
 						system("cls");
 						Energy_change:
-							printf("Energy Change: ");
+						energy_change();
 						printf("Do you want to repeat ? (y/n)\n");
 						printf("\tChoice:");
 						scanf(" %c", &ch);
@@ -533,3 +533,32 @@ printf("Change = %.2f\n",change);
 //b menu stop
 //c menu start
 
+void mass_change(){
+float mass,energy;
+int constant = 299792458;
+printf("===================================\n");
+printf("I   	Mass Change Formula		  I\n");
+printf("I           E= mc^2               I\n");
+printf("I=================================I\n");
+printf("Input Energy Change:");
+scanf("%f",&energy);
+energy=mass * (constant*constant);
+printf("Mass Change = %.2f\n",mass);
+}
+
+void energy_change(){
+float mass,energy;
+int constant = 299792458;
+printf("===================================\n");
+printf("I   	Energy Change Formula	  I\n");
+printf("I           E= mc^2               I\n");
+printf("I=================================I\n");
+printf("Input Mass Change:");
+scanf("%f",&mass);
+energy=mass * (constant*constant);
+printf("Energy Change = %.2f\n",energy);
+
+}
+
+//c menu stop
+// end code
