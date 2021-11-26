@@ -10,12 +10,12 @@ int main()
 
 		printf("Welcome to Main Menu\n");
 		printf("\t\t===================================\n");
-		printf("\t\tI     Choose one action           I\n"); 
+		printf("\t\tI     Choose one action           I\n");
 		printf("\t\tI=================================I\n");
 		printf("\t1. Wave\n");
 		printf("\t2. Electric\n");
 		printf("\t3. Radioactivity \n");
-		printf("\t4. End\n"); 
+		printf("\t4. End\n");
 		printf("\tChoice: ");
 		scanf("%d", &option);
 
@@ -26,12 +26,12 @@ int main()
 				Amenu:
 				printf("Wave Menu\n");
 				printf("\t\t===================================\n");
-				printf("\t\tI     Choose one action           I\n"); 
+				printf("\t\tI     Choose one action           I\n");
 				printf("\t\tI=================================I\n");
 				printf("\t1. Velocity\n");
 				printf("\t2. Frequency\n");
 				printf("\t3. Wave Length \n");
-				printf("\t4. Return Main Menu\n"); 
+				printf("\t4. Return Main Menu\n");
 				printf("\tChoice: ");
 				scanf("%d", &Amenu);
 
@@ -42,7 +42,7 @@ int main()
 						system("cls");
 						velocity:
 
-							printf("Velocity: ");
+						velocity();
 						printf("Do you want to repeat ? (y/n)\n");
 						printf("\tChoice:");
 						scanf(" %c", &ch);
@@ -62,7 +62,7 @@ int main()
 					case 2:
 						system("cls");
 						frequency:
-						printf("Frequency: ");
+						frequency();
 						printf("Do you want to repeat ? (y/n)\n");
 						printf("\tChoice:");
 						scanf(" %c", &ch);
@@ -82,7 +82,7 @@ int main()
 					case 3:
 						system("cls");
 						wave_length:
-							printf("Wave_length: ");
+						wave_length();
 						printf("Do you want to repeat ? (y/n)\n");
 						printf("\tChoice:");
 						scanf(" %c", &ch);
@@ -118,11 +118,11 @@ int main()
 
 				printf("Electric Menu\n");
 				printf("\t\t===================================\n");
-				printf("\t\tI     Choose one action           I\n"); 
+				printf("\t\tI     Choose one action           I\n");
 				printf("\t\tI=================================I\n");
 				printf("\t1. Current\n");
 				printf("\t2. Potential Different\n");
-				printf("\t3. Return\n"); 
+				printf("\t3. Return\n");
 				printf("\tChoice: ");
 				scanf("%d", &bmenu);
 
@@ -135,12 +135,12 @@ int main()
 
 						printf("Current Sub-Menu\n");
 						printf("\t\t===================================\n");
-						printf("\t\tI     Choose one action           I\n"); 
+						printf("\t\tI     Choose one action           I\n");
 						printf("\t\tI=================================I\n");
 						printf("\t1. Charge\n");
 						printf("\t2. Current\n");
 						printf("\t3. Time\n");
-						printf("\t4. Return\n"); 
+						printf("\t4. Return\n");
 						printf("\tChoice: ");
 						scanf("%d", &b1menu);
 
@@ -150,7 +150,7 @@ int main()
 								system("cls");
 								charge:
 
-									printf("Charge: ");
+								charge();
 								printf("Do you want to repeat ? (y/n)\n");
 								printf("\tChoice:");
 								scanf(" %c", &ch);
@@ -170,7 +170,7 @@ int main()
 							case 2:
 								system("cls");
 								current:
-									printf("current: ");
+								current();
 								printf("Do you want to repeat ? (y/n)\n");
 								printf("\tChoice:");
 								scanf(" %c", &ch);
@@ -190,7 +190,7 @@ int main()
 							case 3:
 								system("cls");
 								time:
-									printf("time: ");
+								time();
 								printf("Do you want to repeat ? (y/n)\n");
 								printf("\tChoice:");
 								scanf(" %c", &ch);
@@ -223,12 +223,12 @@ int main()
 						b2menu:
 						printf("Potential Different Sub-Menu\n");
 						printf("\t\t===================================\n");
-						printf("\t\tI     Choose one action           I\n"); 
+						printf("\t\tI     Choose one action           I\n");
 						printf("\t\tI=================================I\n");
 						printf("\t1. Potential Different\n");
 						printf("\t2. Energy\n");
 						printf("\t3. Change\n");
-						printf("\t4. Return\n"); 
+						printf("\t4. Return\n");
 						printf("\tChoice: ");
 						scanf("%d", &b2menu);
 
@@ -238,7 +238,7 @@ int main()
 								system("cls");
 								Potential_differences:
 
-									printf("PD: ");
+								potential_differences();
 								printf("Do you want to repeat ? (y/n)\n");
 								printf("\tChoice:");
 								scanf(" %c", &ch);
@@ -258,7 +258,7 @@ int main()
 							case 2:
 								system("cls");
 								Energy:
-									printf("Energy: ");
+								energy();
 								printf("Do you want to repeat ? (y/n)\n");
 								printf("\tChoice:");
 								scanf(" %c", &ch);
@@ -277,7 +277,7 @@ int main()
 							case 3:
 								system("cls");
 								change:
-									printf("change: ");
+								change();
 								printf("Do you want to repeat ? (y/n)\n");
 								printf("\tChoice:");
 								scanf(" %c", &ch);
@@ -323,11 +323,11 @@ int main()
 				cmenu:
 				printf("Radioactivity Menu\n");
 				printf("\t\t===================================\n");
-				printf("\t\tI     Choose one action           I\n"); 
+				printf("\t\tI     Choose one action           I\n");
 				printf("\t\tI=================================I\n");
 				printf("\t1. Mass Change\n");
 				printf("\t2. Energy Change\n");
-				printf("\t3. Return Main Menu\n"); 
+				printf("\t3. Return Main Menu\n");
 				printf("\tChoice: ");
 				scanf("%d", &cmenu);
 				switch (cmenu)
@@ -352,7 +352,7 @@ int main()
 							system("cls");
 						}
 					break;
-						
+
 					case 2:
 						system("cls");
 						Energy_change:
@@ -388,3 +388,148 @@ int main()
 
 	return 0;
 }
+
+// A menu start
+void velocity(){
+float freq,lambda,velocity;
+printf("===================================\n");
+printf("I        Velocity Formula         I\n");
+printf("I           V = f x λ            I\n");
+printf("I=================================I\n");
+printf("Input Frequency:");
+scanf("%f", &freq);
+printf("Input λ(Lambda):");
+scanf("%f", &lambda);
+velocity=freq*lambda;
+printf("Velocity = %.2f\n", velocity);
+
+}
+
+void frequency(){
+float freq,lambda,velocity;
+printf("===================================\n");
+printf("I        frequency Formula         I\n");
+printf("I           F = V / λ            I\n");
+printf("I=================================I\n");
+printf("Input Velocity:");
+scanf("%f", &velocity);
+printf("Input λ(Lambda):");
+scanf("%f", &lambda);
+freq=velocity/lambda;
+printf("Frequenct = %.2f\n", freq);
+
+}
+
+void wave_length(){
+float freq,lambda,velocity;
+printf("===================================\n");
+printf("I        Wave Length Formula      I\n");
+printf("I           V = f x λ            I\n");
+printf("I=================================I\n");
+printf("Input Frequency:");
+scanf("%f", &freq);
+printf("Input Velocity:");
+scanf("%f", &velocity);
+lambda=velocity/freq;
+printf("λ(lambda) = %.2f\n", lambda);
+
+}
+
+// A menu Stop
+// B menu start
+// b1 menu start
+void charge(){
+float current,charge,time;
+printf("===================================\n");
+printf("I        Charge  Formula  	      I\n");
+printf("I           Q = I x t             I\n");
+printf("I=================================I\n");
+printf("Input Current:");
+scanf("%f",&current);
+printf("Input Time:");
+scanf("%f", &time);
+charge = current * time;
+printf("Charge = %.2f\n",charge);
+
+}
+
+void current(){
+float current,charge,time;
+printf("===================================\n");
+printf("I        Current  Formula  	      I\n");
+printf("I           I = Q x t             I\n");
+printf("I=================================I\n");
+printf("Input Charge:");
+scanf("%f",&charge);
+printf("Input Time:");
+scanf("%f", &time);
+current = charge * time;
+printf("Current = %.2f\n",current);
+
+}
+
+void time(){
+float current,charge,time;
+printf("===================================\n");
+printf("I         Time Formula  	      I\n");
+printf("I           T = I x Q             I\n");
+printf("I=================================I\n");
+printf("Input Current:");
+scanf("%f",&current);
+printf("Input Charge:");
+scanf("%f", &charge);
+time = current * charge;
+printf("Time = %.2f\n",time);
+
+}
+
+//b1 menu stop
+//b2 menu start
+void potential_differences(){
+float voltage,energy,change;
+printf("===================================\n");
+printf("I   Potential Difference Formula  I\n");
+printf("I           V = E / Q             I\n");
+printf("I=================================I\n");
+printf("Input Energy/Watt:");
+scanf("%f",&energy);
+printf("Input Change:");
+scanf("%f",&change);
+voltage=energy/change;
+printf("Voltage = %.2f\n",voltage);
+
+}
+
+void energy(){
+float voltage,energy,change;
+printf("===================================\n");
+printf("I   	Energy Formula			  I\n");
+printf("I           E = V x Q             I\n");
+printf("I=================================I\n");
+printf("Input Voltage:");
+scanf("%f",&voltage);
+printf("Input Change:");
+scanf("%f",&change);
+energy=voltage*change;
+printf("Energy = %.2f\n",energy);
+
+}
+
+void change(){
+float voltage,energy,change;
+printf("===================================\n");
+printf("I   	  Change Formula		  I\n");
+printf("I           Q = V x E             I\n");
+printf("I=================================I\n");
+printf("Input Voltage:");
+scanf("%f",&voltage);
+printf("Input Energy:");
+scanf("%f",&energy);
+change=voltage*energy;
+printf("Change = %.2f\n",change);
+
+}
+//b2 menu stop
+//b menu stop
+//c menu start
+
