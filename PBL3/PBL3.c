@@ -542,7 +542,7 @@ printf("I           E= mc^2               I\n");
 printf("I=================================I\n");
 printf("Input Energy Change:");
 scanf("%f",&energy);
-energy=mass * (constant*constant);
+energy=mass * (constant*constant); // unknwon formula
 printf("Mass Change = %.2f\n",mass);
 }
 
