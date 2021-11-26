@@ -16,15 +16,15 @@ int main()
 
 void Name()
 {
-     printf("Muhammad Nizamuddin Mufid\n");
+     printf("\n");
 }
 
 void GMI_ID()
 {
-    printf("SET 21070794\n");
+    printf("SET \n");
 }
 
 void Phone_No()
 {
-    printf("0133398486\n");
+    printf("\n");
 }

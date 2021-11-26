@@ -18,7 +18,7 @@ int main()
 void Name(int pos)
 {
     if(pos == 0){
-        printf("Muhammad Nizamuddin Mufid\n");
+        printf("\n");
     }else
     {
         printf("Fuck You");
