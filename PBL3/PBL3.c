@@ -16,26 +16,26 @@ int main()  /* Main Function*/
 
 
 
-	do {  //dowhile statement 
+	do {  //dowhile statement
 
 
 
 		option: 	/*Goto Function*/
 		printf("Physics SPM Calculator\n");
-		printf("Welcome to Main Menu\n");  
-		printf("\t\t===================================\n"); 
+		printf("Welcome to Main Menu\n");
+		printf("\t\t===================================\n");
 		printf("\t\tI     Choose one action           I\n");  /* Refer to Figure. 1 MainMenu */
-		printf("\t\tI=================================I\n"); 
-		printf("\t1. Wave\n");  
-		printf("\t2. Electric\n");  
-		printf("\t3. Radioactivity \n");  
-		printf("\t4. End\n");  
+		printf("\t\tI=================================I\n");
+		printf("\t1. Wave\n");
+		printf("\t2. Electric\n");
+		printf("\t3. Radioactivity \n");
+		printf("\t4. End\n");
 
 
 
 
 		/*User Input*/
-		printf("\tChoice: ");  
+		printf("\tChoice: ");
 		scanf("%d", &option); /*User Input Scan*/
 
 
@@ -53,25 +53,25 @@ int main()  /* Main Function*/
 
 
 				Amenu:
-				printf("Wave Menu\n"); 
-				printf("\t\t===================================\n"); 	
+				printf("Wave Menu\n");
+				printf("\t\t===================================\n");
 				printf("\t\tI     Choose one action           I\n");  /* Refer to Figure. 2 SubMenu-A */
-				printf("\t\tI=================================I\n");  
-				printf("\t1. Velocity\n");  
-				printf("\t2. Frequency\n");  
-				printf("\t3. Wave Length \n");  
-				printf("\t4. Return Main Menu\n"); 
+				printf("\t\tI=================================I\n");
+				printf("\t1. Velocity\n");
+				printf("\t2. Frequency\n");
+				printf("\t3. Wave Length \n");
+				printf("\t4. Return Main Menu\n");
 
 
 
 
-				printf("\tChoice: "); 
+				printf("\tChoice: ");
 				scanf("%d", &Amenu); /*User Input Scan*/
 
 
 
 
-				
+
 				/*SubMenu-A Switch Start*/
 				switch (Amenu) /*switch-case Statement*/
 				{
@@ -89,8 +89,8 @@ int main()  /* Main Function*/
 
 
 						/*User Input*/
-						printf("Do you want to repeat ? (y/n)\n");  
-						printf("\tChoice:");  
+						printf("Do you want to repeat ? (y/n)\n");
+						printf("\tChoice:");
 						scanf(" %c", &ch); /*User Input Scan*/
 
 
@@ -128,8 +128,8 @@ int main()  /* Main Function*/
 
 
 						/*User Input*/
-						printf("Do you want to repeat ? (y/n)\n");  
-						printf("\tChoice:"); 
+						printf("Do you want to repeat ? (y/n)\n");
+						printf("\tChoice:");
 						scanf(" %c", &ch); /*User Input Scan*/
 
 						if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
@@ -165,8 +165,8 @@ int main()  /* Main Function*/
 
 
 						/*User Input*/
-						printf("Do you want to repeat ? (y/n)\n"); 
-						printf("\tChoice:"); 
+						printf("Do you want to repeat ? (y/n)\n");
+						printf("\tChoice:");
 						scanf(" %c", &ch);  /*User Input Scan*/
 
 						if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
@@ -177,7 +177,7 @@ int main()  /* Main Function*/
 
 
 
-						
+
 						else{
 							system("cls");	/*Clear Screen*/
 							goto Amenu; 	/*Goto Function*/
@@ -190,11 +190,11 @@ int main()  /* Main Function*/
 					break; 	/*Switch-Case Break Case 3 */
 
 					case 4:/*Exit*/
-						printf("Return to Main \n"); 
+						printf("Return to Main \n");
 						system("cls");  /*Clear Screen*/
-					
-					
-					
+
+
+
 					break; /*Switch-Case Break Case 3 */
 
 
@@ -213,7 +213,7 @@ int main()  /* Main Function*/
 
 			break; /*Switch-Case Break SubMenu-A Case 1*/
 			/*SubMenu-A Stop*/
-				
+
 
 
 
@@ -228,17 +228,17 @@ int main()  /* Main Function*/
 				bmenu: /*Goto Function*/
 
 				printf("Electric Menu\n");
-				printf("\t\t===================================\n");  
+				printf("\t\t===================================\n");
 				printf("\t\tI     Choose one action           I\n");  /* Refer to Figure. 3 SubMenu-B */
-				printf("\t\tI=================================I\n");  
-				printf("\t1. Current\n");  
-				printf("\t2. Potential Different\n");  
-				printf("\t3. Return\n"); 
+				printf("\t\tI=================================I\n");
+				printf("\t1. Current\n");
+				printf("\t2. Potential Different\n");
+				printf("\t3. Return\n");
 
 
 
 
-				printf("\tChoice: ");  
+				printf("\tChoice: ");
 				scanf("%d", &bmenu); /*User Input Scan*/
 
 
@@ -253,26 +253,26 @@ int main()  /* Main Function*/
 					/*SubMenu-B1 Start*/
 					case 1:
 						system("cls"); /*Clear Screen*/
-						
-						
-						
+
+
+
 						b1menu: /*Goto Function*/
 
 
 
-						printf("Current Sub-Menu\n");  
-						printf("\t\t===================================\n");  
-						printf("\t\tI     Choose one action           I\n"); 
-						printf("\t\tI=================================I\n");  
+						printf("Current Sub-Menu\n");
+						printf("\t\t===================================\n");
+						printf("\t\tI     Choose one action           I\n");
+						printf("\t\tI=================================I\n");
 						printf("\t1. Charge\n");  		/*Refer to Figure 4 SubMenu-B1*/
-						printf("\t2. Current\n");  
-						printf("\t3. Time\n");  
-						printf("\t4. Return\n");  
+						printf("\t2. Current\n");
+						printf("\t3. Time\n");
+						printf("\t4. Return\n");
 
 
 
 
-						printf("\tChoice: ");  
+						printf("\tChoice: ");
 						scanf("%d", &b1menu); /*User Input Scan*/
 
 
@@ -293,8 +293,8 @@ int main()  /* Main Function*/
 
 
 
-								printf("Do you want to repeat ? (y/n)\n");  
-								printf("\tChoice:");  
+								printf("Do you want to repeat ? (y/n)\n");
+								printf("\tChoice:");
 								scanf(" %c", &ch);  /*User Input Scan*/
 
 
@@ -334,8 +334,8 @@ int main()  /* Main Function*/
 
 
 
-								printf("Do you want to repeat ? (y/n)\n");  
-								printf("\tChoice:");  
+								printf("Do you want to repeat ? (y/n)\n");
+								printf("\tChoice:");
 								scanf(" %c", &ch); /*User Input Scan*/
 
 
@@ -374,8 +374,8 @@ int main()  /* Main Function*/
 
 
 
-								printf("Do you want to repeat ? (y/n)\n");  
-								printf("\tChoice:"); 
+								printf("Do you want to repeat ? (y/n)\n");
+								printf("\tChoice:");
 								scanf(" %c", &ch); /*User Input Scan*/
 
 
@@ -411,28 +411,28 @@ int main()  /* Main Function*/
 								printf("Return to Main \n");
 								system("cls"); /*Clear Screen*/
 								goto bmenu; /*Goto Function*/
-							
-							
-							
+
+
+
 							break; /*Switch-Case Break Case 4*/
 
 
 
 							default:/*Default Switch-Case Return*/
-								printf("Invalid selection\n"); 
+								printf("Invalid selection\n");
 
 
 
 								break; /*Switch-Case Break Default*/
 						}
 						/*SubMenu-B1 Switch Stop*/
-						
+
 
 
 
 					break;  /*SubMenu-B1 Stop*/
-				
-					
+
+
 
 
 
@@ -447,19 +447,19 @@ int main()  /* Main Function*/
 
 
 
-						printf("Potential Different Sub-Menu\n");  
-						printf("\t\t===================================\n");  
-						printf("\t\tI     Choose one action           I\n");   
-						printf("\t\tI=================================I\n");  
+						printf("Potential Different Sub-Menu\n");
+						printf("\t\t===================================\n");
+						printf("\t\tI     Choose one action           I\n");
+						printf("\t\tI=================================I\n");
 						printf("\t1. Potential Different\n");   /*Refer to Figure 5 SubMenu-B2*/
-						printf("\t2. Energy\n"); 
-						printf("\t3. Change\n");  
-						printf("\t4. Return\n");  
+						printf("\t2. Energy\n");
+						printf("\t3. Change\n");
+						printf("\t4. Return\n");
 
 
 
 
-						printf("\tChoice: ");  
+						printf("\tChoice: ");
 						scanf("%d", &b2menu); /*User Input Scan*/
 
 						/*SubMenu-B2 Switch Start*/
@@ -480,8 +480,8 @@ int main()  /* Main Function*/
 
 
 
-								printf("Do you want to repeat ? (y/n)\n"); 
-								printf("\tChoice:"); 
+								printf("Do you want to repeat ? (y/n)\n");
+								printf("\tChoice:");
 								scanf(" %c", &ch); /*User Input Scan*/
 
 
@@ -520,8 +520,8 @@ int main()  /* Main Function*/
 
 
 
-								printf("Do you want to repeat ? (y/n)\n"); 
-								printf("\tChoice:"); 
+								printf("Do you want to repeat ? (y/n)\n");
+								printf("\tChoice:");
 								scanf(" %c", &ch); /*User Input Scan*/
 
 
@@ -551,16 +551,16 @@ int main()  /* Main Function*/
 
 							case 3:
 								system("cls"); /*Clear Screen*/
-								
-								
-								
+
+
+
 								change:		/*Goto Function*/
 								change(); 	/*CallBack Change Function*/
 
 
 
 
-								printf("Do you want to repeat ? (y/n)\n"); 
+								printf("Do you want to repeat ? (y/n)\n");
 								printf("\tChoice:");
 								scanf(" %c", &ch); /*User Input Scan*/
 
@@ -587,10 +587,10 @@ int main()  /* Main Function*/
 
 
 
-							case 4:	
+							case 4:
 
 
-								printf("Return to Main \n"); 
+								printf("Return to Main \n");
 								system("cls"); 	/*Clear Screen*/
 								goto bmenu; 	/*Goto Function*/
 
@@ -603,7 +603,7 @@ int main()  /* Main Function*/
 
 
 							default: /*Default Switch-Case Return*/
-								printf("Invalid selection\n"); 
+								printf("Invalid selection\n");
 
 
 
@@ -614,12 +614,12 @@ int main()  /* Main Function*/
 
 					break;
 					/*SubMenu-B2 Stop*/
-						
 
 
-			
+
+
 					case 3:
-						printf("Return to Main \n"); 
+						printf("Return to Main \n");
 						system("cls");	/*Clear Screen*/
 
 
@@ -630,7 +630,7 @@ int main()  /* Main Function*/
 
 
 					default: /*Default Switch-Case Return*/
-						printf("Invalid selection\n"); 
+						printf("Invalid selection\n");
 
 
 
@@ -641,7 +641,7 @@ int main()  /* Main Function*/
 			break;
 			/*SubMenu-B Switch Stop*/
 
-			
+
 
 			/*SubMenu-C  Start*/
 			case 3:
@@ -650,18 +650,18 @@ int main()  /* Main Function*/
 
 
 				cmenu: 			/*Goto Function*/
-				printf("Radioactivity Menu\n");  
-				printf("\t\t===================================\n");  
-				printf("\t\tI     Choose one action           I\n");  
-				printf("\t\tI=================================I\n");  
+				printf("Radioactivity Menu\n");
+				printf("\t\t===================================\n");
+				printf("\t\tI     Choose one action           I\n");
+				printf("\t\tI=================================I\n");
 				printf("\t1. Power of Lens\n");   		 /*Refer to Figure 6 SubMenu-C*/
-				printf("\t2. Linear Magnification\n");  
-				printf("\t3. Return Main Menu\n"); 
+				printf("\t2. Linear Magnification\n");
+				printf("\t3. Return Main Menu\n");
 
 
 
 
-				printf("\tChoice: ");  
+				printf("\tChoice: ");
 				scanf("%d", &cmenu);  /*User Input Scan*/
 
 
@@ -683,8 +683,8 @@ int main()  /* Main Function*/
 
 
 
-						printf("Do you want to repeat ? (y/n)\n"); 
-						printf("\tChoice:"); 
+						printf("Do you want to repeat ? (y/n)\n");
+						printf("\tChoice:");
 						scanf(" %c", &ch);   /*User Input Scan*/
 
 
@@ -724,8 +724,8 @@ int main()  /* Main Function*/
 
 
 
-						printf("Do you want to repeat ? (y/n)\n"); 
-						printf("\tChoice:"); 
+						printf("Do you want to repeat ? (y/n)\n");
+						printf("\tChoice:");
 						scanf(" %c", &ch); /*User Input Scan*/
 
 
@@ -754,8 +754,8 @@ int main()  /* Main Function*/
 
 
 
-					case 3:	
-						printf("Return to Main \n"); 
+					case 3:
+						printf("Return to Main \n");
 						system("cls"); /*Clear Screen*/
 
 
@@ -807,7 +807,7 @@ printf("I           V = f x λ            I\n"); /*Refer to Figure 7 Velocity Fu
 printf("I=================================I\n");
 
 
-printf("Input Frequency:"); 
+printf("Input Frequency:");
 scanf("%f", &freq);  /*User Input Scan Store as freq*/
 
 
@@ -874,12 +874,12 @@ printf("I=================================I\n");
 
 
 
-printf("Input Frequency:"); 
+printf("Input Frequency:");
 scanf("%f", &freq); /*User Input Scan Store as Freq*/
 
 
 
-printf("Input Velocity:"); 
+printf("Input Velocity:");
 scanf("%f", &velocity); /*User Input Scan Store as velocity*/
 
 
@@ -906,7 +906,7 @@ float current,charge,time; /*Variable Declaration*/
 
 
 printf("===================================\n");
-printf("I        Charge  Formula  	      I\n"); /*Refer to Figure 10 Charge Function*/
+printf("I        Charge  Formula          I\n"); /*Refer to Figure 10 Charge Function*/
 printf("I           Q = I x t             I\n");
 printf("I=================================I\n");
 
@@ -916,7 +916,7 @@ printf("Input Current:");
 scanf("%f",&current); /*User Input Scan Store as Current*/
 
 
-printf("Input Time:"); 
+printf("Input Time:");
 scanf("%f", &time); /*User Input Scan Store as Time*/
 
 
@@ -938,23 +938,23 @@ float current,charge,time; /*Variable Declaration*/
 
 
 printf("===================================\n");
-printf("I        Current  Formula  	      I\n");
-printf("I           I = Q x t             I\n");/*Refer to Figure 11 Current Function*/
+printf("I        Current  Formula         I\n");
+printf("I           I = Q / t             I\n");/*Refer to Figure 11 Current Function*/
 printf("I=================================I\n");
 
 
 
-printf("Input Charge:"); 
+printf("Input Charge:");
 scanf("%f",&charge); /*User Input Scan Store as charge*/
 
 
 
-printf("Input Time:"); 
+printf("Input Time:");
 scanf("%f", &time); /*User Input Scan Store as Time*/
 
 
 
-current = charge * time;  /*Calculation Proccess Formula */
+current = charge / time;  /*Calculation Proccess Formula */
 
 
 printf("Current = %.2f A \n",current); /*Display Output*/
@@ -970,13 +970,13 @@ float current,charge,time; /*Variable Declaration*/
 
 
 printf("===================================\n");
-printf("I         Time Formula  	      I\n");
-printf("I           T = I x Q             I\n");/*Refer to Figure 12 Time Function*/
+printf("I         Time Formula            I\n");
+printf("I           T = I / Q             I\n");/*Refer to Figure 12 Time Function*/
 printf("I=================================I\n");
 
 
 
-printf("Input Current:"); 
+printf("Input Current:");
 scanf("%f",&current); /*User Input Scan Store as Current*/
 
 
@@ -986,7 +986,7 @@ scanf("%f", &charge); /*User Input Scan Store as Charge*/
 
 
 
-time = current * charge; /*Calculation Proccess Formula */
+time = current / charge; /*Calculation Proccess Formula */
 
 
 
@@ -1011,12 +1011,12 @@ printf("I=================================I\n");
 
 
 
-printf("Input Energy/Watt:");  
+printf("Input Energy/Watt:");
 scanf("%f",&energy); /*User Input Scan Store as energy*/
 
 
 
-printf("Input Change:"); 
+printf("Input Change:");
 scanf("%f",&change); /*User Input Scan Store as change*/
 
 
@@ -1035,19 +1035,19 @@ void energy(){ /* SubFunction*/
 
 float voltage,energy,change; /*Variable Declaration*/
 printf("===================================\n");
-printf("I   	Energy Formula			  I\n");
+printf("I   	Energy Formula	          I\n");
 printf("I           E = V x Q             I\n"); /*Refer to Figure 14 Energy Function*/
 printf("I=================================I\n");
 
 
 
 
-printf("Input Voltage:"); 
+printf("Input Voltage:");
 scanf("%f",&voltage); /*User Input Scan Store as Voltage*/
 
 
 
-printf("Input Change:"); 
+printf("Input Change:");
 scanf("%f",&change); /*User Input Scan Store as Change*/
 
 
@@ -1067,24 +1067,24 @@ void change(){ /* SubFunction*/
 float voltage,energy,change; /*Variable Declaration*/
 printf("===================================\n");
 printf("I   	  Change Formula		  I\n");
-printf("I           Q = V x E             I\n");/*Refer to Figure 15 Change Function*/
+printf("I           Q = V / E             I\n");/*Refer to Figure 15 Change Function*/
 printf("I=================================I\n");
 
 
 
 
-printf("Input Voltage:"); 
+printf("Input Voltage:");
 scanf("%f",&voltage);  /*User Input Scan Store as Voltage*/
 
 
 
 
-printf("Input Energy:"); 
+printf("Input Energy:");
 scanf("%f",&energy); /*User Input Scan Store as energy*/
 
 
 
-change=voltage*energy; /*Calculation Proccess Formula */
+change=voltage/energy; /*Calculation Proccess Formula */
 
 
 printf("Change = %.2f C \n",change); /*Display Output*/
@@ -1109,7 +1109,7 @@ printf("I           1/Focal Length        I\n");/*Refer to Figure 16 Power Of Le
 printf("I=================================I\n");
 
 
-printf("Focal length:"); 
+printf("Focal length:");
 scanf("%f",&focal_length); /*User Input Scan Store as Focal Length*/
 
 
