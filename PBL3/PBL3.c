@@ -21,7 +21,7 @@ int main()  /* Main Function*/
 
 
 		option: 	/*Goto Function*/
-		printf("Physics SPM Calculator");
+		printf("Physics SPM Calculator\n");
 		printf("Welcome to Main Menu\n");  
 		printf("\t\t===================================\n"); 
 		printf("\t\tI     Choose one action           I\n");  /* Refer to Figure. 1 MainMenu */
