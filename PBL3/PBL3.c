@@ -1,564 +1,1155 @@
+/* Preprocessor directives */
+/* Handles all input & output functions*/
 #include <stdio.h>
 
-int main()
+
+
+/*global Variable declaration*/
+	int option, Amenu, bmenu, b1menu, b2menu, cmenu;  /*Choice represents number 1, 2 , 3*/
+	char ch; /* ch represents character 1, 2, 3*/
+
+
+
+int main()  /* Main Function*/
 {
-	//global Variable declaration
-	int option, Amenu, bmenu, b1menu, b2menu, cmenu;
-	char ch;
-	do {  //do while statement 
-		option:
 
-		printf("Welcome to Main Menu\n");  //Prompt
-		printf("\t\t===================================\n"); //Prompt
-		printf("\t\tI     Choose one action           I\n");  //Prompt
-		printf("\t\tI=================================I\n");  //Prompt 
-		printf("\t1. Wave\n");  //Prompt
-		printf("\t2. Electric\n");  //Prompt
-		printf("\t3. Radioactivity \n");  //Prompt
-		printf("\t4. End\n");  //Prompt
-		printf("\tChoice: ");  //Prompt
-		scanf("%d", &option); //Input using scanf
 
-		switch (option) // switch case function
+
+
+	do {  //dowhile statement 
+
+
+
+		option: 	/*Goto Function*/
+		printf("Physics SPM Calculator");
+		printf("Welcome to Main Menu\n");  
+		printf("\t\t===================================\n"); 
+		printf("\t\tI     Choose one action           I\n");  /* Refer to Figure. 1 MainMenu */
+		printf("\t\tI=================================I\n"); 
+		printf("\t1. Wave\n");  
+		printf("\t2. Electric\n");  
+		printf("\t3. Radioactivity \n");  
+		printf("\t4. End\n");  
+
+
+
+
+		/*User Input*/
+		printf("\tChoice: ");  
+		scanf("%d", &option); /*User Input Scan*/
+
+
+
+
+
+		switch (option) /*switch-case Statement*/
 		{
+
+
+			/*SubMenu-A Start*/
 			case 1:
-				system("cls"); // clear screen
+				system("cls"); /*Clear Screen*/
+
+
+
 				Amenu:
-				printf("Wave Menu\n");  //Prompt
-				printf("\t\t===================================\n"); 	//Prompt
-				printf("\t\tI     Choose one action           I\n");  //Prompt 
-				printf("\t\tI=================================I\n");  //Prompt
-				printf("\t1. Velocity\n");  //Prompt
-				printf("\t2. Frequency\n");  //Prompt
-				printf("\t3. Wave Length \n");  //Prompt
-				printf("\t4. Return Main Menu\n");  //Prompt
-				printf("\tChoice: ");  //Prompt
-				scanf("%d", &Amenu); //Input using scanf
+				printf("Wave Menu\n"); 
+				printf("\t\t===================================\n"); 	
+				printf("\t\tI     Choose one action           I\n");  /* Refer to Figure. 2 SubMenu-A */
+				printf("\t\tI=================================I\n");  
+				printf("\t1. Velocity\n");  
+				printf("\t2. Frequency\n");  
+				printf("\t3. Wave Length \n");  
+				printf("\t4. Return Main Menu\n"); 
 
-				//A sub menu start
-				switch (Amenu) //switch case function
+
+
+
+				printf("\tChoice: "); 
+				scanf("%d", &Amenu); /*User Input Scan*/
+
+
+
+
+				
+				/*SubMenu-A Switch Start*/
+				switch (Amenu) /*switch-case Statement*/
 				{
+
+
+
+
 					case 1:
-						system("cls"); // clear screen
-						velocity:
+						system("cls"); /*Clear Screen*/
 
-						velocity(); // call function
-						printf("Do you want to repeat ? (y/n)\n");  //Prompt
-						printf("\tChoice:");  //Prompt
-						scanf(" %c", &ch); //Input using scanf
 
-						if (ch == 'y' || ch == 'Y') // if else statement
+
+						velocity: /*Goto Function*/
+						velocity(); /*CallBack Velocity Function*/
+
+
+						/*User Input*/
+						printf("Do you want to repeat ? (y/n)\n");  
+						printf("\tChoice:");  
+						scanf(" %c", &ch); /*User Input Scan*/
+
+
+
+						if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 						{
-							system("cls"); // clear screen
-							goto velocity;
+							system("cls"); /*Clear Screen*/
+							goto velocity; /*Goto Function*/
 						}
+
+
+
 						else{
-							system("cls"); // clear screen
-							goto Amenu;
-							system("cls"); // clear screen
+							system("cls"); /*Clear Screen*/
+							goto Amenu; /*Goto Function*/
+							system("cls"); /*Clear Screen*/
 						}
-					break;
+
+
+
+					break; /*Switch-Case Break Case 1 */
+
+
+
+
 
 					case 2:
-						system("cls"); // clear screen
-						frequency:
-						frequency(); // call function
-						printf("Do you want to repeat ? (y/n)\n");  //Prompt
-						printf("\tChoice:");  //Prompt
-						scanf(" %c", &ch); //Input using scanf
+						system("cls"); /*Clear Screen*/
 
-						if (ch == 'y' || ch == 'Y') // if else statement
+
+
+						frequency: /*Goto Function*/
+						frequency(); /*CallBack Frequency Function*/
+
+
+
+						/*User Input*/
+						printf("Do you want to repeat ? (y/n)\n");  
+						printf("\tChoice:"); 
+						scanf(" %c", &ch); /*User Input Scan*/
+
+						if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 						{
-							system("cls"); // clear screen
-							goto frequency; // goto function
+							system("cls"); /*Clear Screen*/
+							goto frequency; /*Goto Function*/
 						}
+
+
+
 						else{
-							system("cls"); // clear screen
-							goto Amenu; // goto function
-							system("cls"); // clear screen
+							system("cls");	/*Clear Screen*/
+							goto Amenu; 	/*Goto Function*/
+							system("cls"); 	/*Clear Screen*/
 						}
-					break;
+
+
+
+					break;	/*Switch-Case Break Case 2 */
+
+
+
+
 
 					case 3:
-						system("cls"); // clear screen
-						wave_length:
-						wave_length(); // call function
-						printf("Do you want to repeat ? (y/n)\n");  //Prompt
-						printf("\tChoice:");  //Prompt
-						scanf(" %c", &ch); //Input using scanf
+						system("cls"); /*Clear Screen*/
 
-						if (ch == 'y' || ch == 'Y') // if else function
+
+
+						wave_length:/*Goto Function*/
+						wave_length(); /* CallBack Wave_length Function*/
+
+
+
+						/*User Input*/
+						printf("Do you want to repeat ? (y/n)\n"); 
+						printf("\tChoice:"); 
+						scanf(" %c", &ch);  /*User Input Scan*/
+
+						if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 						{
-							system("cls"); // clear screen
-							goto wave_length; // goto function
+							system("cls"); /*Clear Screen*/
+							goto wave_length; /*Goto Function*/
 						}
+
+
+
+						
 						else{
-							system("cls"); // clear screen
-							goto Amenu; // goto function
-							system("cls"); // clear screen
+							system("cls");	/*Clear Screen*/
+							goto Amenu; 	/*Goto Function*/
+							system("cls");	/*Clear Screen*/
 						}
-					break;
 
-					case 4:	//exit
-						printf("Return to Main \n"); //prompt
-						system("cls");  // clear screen
-					break;
-					default:
-						printf("Invalid selection\n"); //prompt
-					break;
+
+
+
+					break; 	/*Switch-Case Break Case 3 */
+
+					case 4:/*Exit*/
+						printf("Return to Main \n"); 
+						system("cls");  /*Clear Screen*/
+					
+					
+					
+					break; /*Switch-Case Break Case 3 */
+
+
+
+
+					default: /*Defailt Switch-Case Return*/
+						printf("Invalid selection\n"); /*Printf Function*/
+
+
+
+					break;/*Switch-Case Break Default */
 				}
-			break;
+				/*SubMenu-A Switch Stop*/
 
-				// A submenu stop
-				//b submenu start
+
+
+			break; /*Switch-Case Break SubMenu-A Case 1*/
+			/*SubMenu-A Stop*/
+				
+
+
+
+			/*SubMenu-B Start*/
+
 			case 2:
-				system("cls"); //clear screen
-				electric:
-					bmenu:
+				system("cls"); /*Clear Screen*/
+
+
+
+				electric: /*Goto Function*/
+				bmenu: /*Goto Function*/
 
 				printf("Electric Menu\n");
-				printf("\t\t===================================\n");  //Prompt
-				printf("\t\tI     Choose one action           I\n");  //Prompt
-				printf("\t\tI=================================I\n");  //Prompt
-				printf("\t1. Current\n");  //Prompt
-				printf("\t2. Potential Different\n");  //Prompt
-				printf("\t3. Return\n");  //Prompt
-				printf("\tChoice: ");  //Prompt
-				scanf("%d", &bmenu); //Input using scanf
+				printf("\t\t===================================\n");  
+				printf("\t\tI     Choose one action           I\n");  /* Refer to Figure. 3 SubMenu-B */
+				printf("\t\tI=================================I\n");  
+				printf("\t1. Current\n");  
+				printf("\t2. Potential Different\n");  
+				printf("\t3. Return\n"); 
 
-				switch (bmenu) // switch case function
+
+
+
+				printf("\tChoice: ");  
+				scanf("%d", &bmenu); /*User Input Scan*/
+
+
+
+				/*SubMenu-B Switch Start*/
+				switch (bmenu) /*switch-case Statement*/
 				{
-					//b1menu start
+
+
+
+
+					/*SubMenu-B1 Start*/
 					case 1:
-						system("cls"); // clear screen
-						b1menu:
+						system("cls"); /*Clear Screen*/
+						
+						
+						
+						b1menu: /*Goto Function*/
 
-						printf("Current Sub-Menu\n");  //Prompt
-						printf("\t\t===================================\n");  //Prompt
-						printf("\t\tI     Choose one action           I\n");  //Prompt
-						printf("\t\tI=================================I\n");  //Prompt
-						printf("\t1. Charge\n");  //Prompt
-						printf("\t2. Current\n");  //Prompt
-						printf("\t3. Time\n");  //Prompt
-						printf("\t4. Return\n");  //Prompt
-						printf("\tChoice: ");  //Prompt
-						scanf("%d", &b1menu); //Input using scanf
 
-						switch (b1menu) //switch case function
+
+						printf("Current Sub-Menu\n");  
+						printf("\t\t===================================\n");  
+						printf("\t\tI     Choose one action           I\n"); 
+						printf("\t\tI=================================I\n");  
+						printf("\t1. Charge\n");  		/*Refer to Figure 4 SubMenu-B1*/
+						printf("\t2. Current\n");  
+						printf("\t3. Time\n");  
+						printf("\t4. Return\n");  
+
+
+
+
+						printf("\tChoice: ");  
+						scanf("%d", &b1menu); /*User Input Scan*/
+
+
+
+						/*SubMenu-B1 Switch Start*/
+						switch (b1menu) /*switch-case Statement*/
 						{
+
+
+
 							case 1:
-								system("cls"); // clear screen
-								charge:
+								system("cls"); /*Clear Screen*/
 
-								charge(); // call function
-								printf("Do you want to repeat ? (y/n)\n");  //Prompt
-								printf("\tChoice:");  //Prompt
-								scanf(" %c", &ch); //Input using scanf
 
-								if (ch == 'y' || ch == 'Y') //if else function
+
+								charge: /*Goto Function*/
+								charge(); /*CallBack Charge Function*/
+
+
+
+								printf("Do you want to repeat ? (y/n)\n");  
+								printf("\tChoice:");  
+								scanf(" %c", &ch);  /*User Input Scan*/
+
+
+
+
+								if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 								{
-									system("cls"); // clear screen
-									goto charge; // goto function
+									system("cls");	/*Clear Screen*/
+									goto charge; 	/*Goto Function*/
 								}
+
+
+
+
 								else{
-									system("cls"); // clear screen
-									goto b1menu; // goto function
-									system("cls"); // clear screen
+									system("cls");	/*Clear Screen*/
+									goto b1menu; 	/*Goto Function*/
+									system("cls");	/*Clear Screen*/
 								}
-							break;
+
+
+
+							break; /*Switch-Case Break Case 1*/
+
+
+
+
 
 							case 2:
-								system("cls"); //clear screen
-								current:
-								current(); // call function
-								printf("Do you want to repeat ? (y/n)\n");  //Prompt
-								printf("\tChoice:");  //Prompt
-								scanf(" %c", &ch); //Input using scanf
+								system("cls"); /*Clear Screen*/
 
-								if (ch == 'y' || ch == 'Y') //ifelse function
+
+
+								current:	/*Goto Function*/
+								current();	/*CallBack Current Function*/
+
+
+
+
+								printf("Do you want to repeat ? (y/n)\n");  
+								printf("\tChoice:");  
+								scanf(" %c", &ch); /*User Input Scan*/
+
+
+
+
+								if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 								{
-									system("cls"); // clear screen
-									goto current; // goto function
+									system("cls"); /*Clear Screen*/
+									goto current; /*Goto Function*/
 								}
+
+
+
 								else{
-									system("cls"); // clear screen
-									goto b1menu; // goto function
-									system("cls"); // clear screen
+									system("cls");	/*Clear Screen*/
+									goto b1menu;	/*Goto Function*/
+									system("cls");	/*Clear Screen*/
 								}
-							break;
+
+
+
+							break; /*Switch-Case Break Case 2*/
+
+
+
 
 							case 3:
-								system("cls"); // clear screen
-								time:
-								time(); // call function
-								printf("Do you want to repeat ? (y/n)\n");  //Prompt
-								printf("\tChoice:");  //Prompt
-								scanf(" %c", &ch); //Input using scanf
+								system("cls"); /*Clear Screen*/
 
-								if (ch == 'y' || ch == 'Y') // if else function
+
+
+
+								time: /*Goto Function*/
+								time(); /*CallBack Time Function*/
+
+
+
+
+								printf("Do you want to repeat ? (y/n)\n");  
+								printf("\tChoice:"); 
+								scanf(" %c", &ch); /*User Input Scan*/
+
+
+
+
+								if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 								{
-									system("cls"); // clear screen
-									goto time; // goto function
+									system("cls");	/*Clear Screen*/
+									goto time; 		/*Goto Function*/
 								}
-								else{
-									system("cls"); // clear screen
-									goto b1menu; // goto function
-									system("cls"); // clear screen
-								}
-							break;
 
-							case 4:	//exit
-								printf("Return to Main \n"); //prompt
-								system("cls"); // clear screen
-								goto bmenu; // goto function
-							default:
-								printf("Invalid selection\n"); // prompt
-								break;
+
+
+
+								else{
+									system("cls");	/*Clear Screen*/
+									goto b1menu; 	/*Goto Function*/
+									system("cls");	/*Clear Screen*/
+								}
+
+
+
+
+							break;/*Switch-Case Break Case 3*/
+
+
+
+
+							case 4:	/*Return To SubMenu-B*/
+
+
+
+								printf("Return to Main \n");
+								system("cls"); /*Clear Screen*/
+								goto bmenu; /*Goto Function*/
+							
+							
+							
+							break; /*Switch-Case Break Case 4*/
+
+
+
+							default:/*Default Switch-Case Return*/
+								printf("Invalid selection\n"); 
+
+
+
+								break; /*Switch-Case Break Default*/
 						}
-					break;
-						//b1menu stop
-						//b2menu start
+						/*SubMenu-B1 Switch Stop*/
+						
+
+
+
+					break;  /*SubMenu-B1 Stop*/
+				
+					
+
+
+
+
+					/*SubMenu-B2 Start*/
 					case 2:
-						system("cls"); // clear screen
-						b2menu:
-						printf("Potential Different Sub-Menu\n");  //Prompt
-						printf("\t\t===================================\n");  //Prompt
-						printf("\t\tI     Choose one action           I\n");  //Prompt
-						printf("\t\tI=================================I\n");  //Prompt
-						printf("\t1. Potential Different\n");  //Prompt
-						printf("\t2. Energy\n");  //Prompt
-						printf("\t3. Change\n");  //Prompt
-						printf("\t4. Return\n");  //Prompt
-						printf("\tChoice: ");  //Prompt
-						scanf("%d", &b2menu); //Input using scanf
 
-						switch (b2menu) //switch case function
+
+
+						system("cls");	/*Clear Screen*/
+						b2menu: 		/*Goto Function*/
+
+
+
+						printf("Potential Different Sub-Menu\n");  
+						printf("\t\t===================================\n");  
+						printf("\t\tI     Choose one action           I\n");   
+						printf("\t\tI=================================I\n");  
+						printf("\t1. Potential Different\n");   /*Refer to Figure 5 SubMenu-B2*/
+						printf("\t2. Energy\n"); 
+						printf("\t3. Change\n");  
+						printf("\t4. Return\n");  
+
+
+
+
+						printf("\tChoice: ");  
+						scanf("%d", &b2menu); /*User Input Scan*/
+
+						/*SubMenu-B2 Switch Start*/
+						switch (b2menu) /*switch-case Statement*/
 						{
+
+
+
+
 							case 1:
-								system("cls"); // clear screen
-								Potential_differences:
+								system("cls"); /*Clear Screen*/
 
-								potential_differences();  // call function
-								printf("Do you want to repeat ? (y/n)\n"); //propmt
-								printf("\tChoice:"); //prompt
-								scanf(" %c", &ch); //Input using scanf
 
-								if (ch == 'y' || ch == 'Y') //ifelse function
+
+
+								Potential_differences: /*Goto Function*/
+								potential_differences();  /*CallBack Potential_Different Function*/
+
+
+
+								printf("Do you want to repeat ? (y/n)\n"); 
+								printf("\tChoice:"); 
+								scanf(" %c", &ch); /*User Input Scan*/
+
+
+
+
+								if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 								{
-									system("cls"); // clear screen
-									goto Potential_differences; // goto function
+									system("cls"); /*Clear Screen*/
+									goto Potential_differences; /*Goto Function*/
 								}
+
+
+
+
 								else{
-									system("cls"); // clear screen
-									goto b2menu; // goto function
-									system("cls"); // clear screen
+									system("cls");	/*Clear Screen*/
+									goto b2menu; 	/*Goto Function*/
+									system("cls");	/*Clear Screen*/
 								}
-							break;
+
+
+
+							break; /*Switch-Case Break Case 1*/
+
+
+
 
 							case 2:
-								system("cls"); // clear screen
-								Energy:
-								energy(); // call function
-								printf("Do you want to repeat ? (y/n)\n"); //prompt
-								printf("\tChoice:"); //prompt
-								scanf(" %c", &ch); //Input using scanf
+								system("cls"); /*Clear Screen*/
 
-								if (ch == 'y' || ch == 'Y') // if else function
+
+
+								Energy: 	/*Goto Function*/
+								energy(); /*CallBack Energy Function*/
+
+
+
+
+								printf("Do you want to repeat ? (y/n)\n"); 
+								printf("\tChoice:"); 
+								scanf(" %c", &ch); /*User Input Scan*/
+
+
+
+
+								if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 								{
-									system("cls"); // clear screen
-									goto Energy;  // goto function
+									system("cls");	/*Clear Screen*/
+									goto Energy;  	/*Goto Function*/
 								}
+
+
+
+
 								else{
-									system("cls"); // clear screen
-									goto b2menu; // goto function
-									system("cls"); // clear screen
+									system("cls");	/*Clear Screen*/
+									goto b2menu; 	/*Goto Function*/
+									system("cls");	/*Clear Screen*/
 								}
-							break;
+
+
+
+							break; /*Switch-Case Break Case 2*/
+
+
+
+
 							case 3:
-								system("cls"); // clear screen
-								change:
-								change(); //call function
-								printf("Do you want to repeat ? (y/n)\n"); //prompt
-								printf("\tChoice:"); //prompt
-								scanf(" %c", &ch); //Input using scanf
+								system("cls"); /*Clear Screen*/
+								
+								
+								
+								change:		/*Goto Function*/
+								change(); 	/*CallBack Change Function*/
 
-								if (ch == 'y' || ch == 'Y') //if else function
+
+
+
+								printf("Do you want to repeat ? (y/n)\n"); 
+								printf("\tChoice:");
+								scanf(" %c", &ch); /*User Input Scan*/
+
+
+
+
+								if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 								{
-									system("cls"); // clear screen
-									goto change; // goto function
+									system("cls");	/*Clear Screen*/
+									goto change; 	/*Goto Function*/
 								}
+
+
+
 								else{
-									system("cls"); // clear screen
-									goto b2menu; // goto function
-									system("cls"); // clear screen
+									system("cls");	/*Clear Screen*/
+									goto b2menu; 	/*Goto Function*/
+									system("cls");	/*Clear Screen*/
 								}
-							break;
-							case 4:	//exit
-								printf("Return to Main \n"); // prompt
-								system("cls"); // clear screen
-								goto bmenu; // goto function
-							break;
-							default:
-								printf("Invalid selection\n"); // prompt
-							break;
+
+
+
+							break; /*Switch-Case Break Case 3*/
+
+
+
+							case 4:	
+
+
+								printf("Return to Main \n"); 
+								system("cls"); 	/*Clear Screen*/
+								goto bmenu; 	/*Goto Function*/
+
+
+
+							break; /*Switch-Case Break Case 4*/
+
+
+
+
+
+							default: /*Default Switch-Case Return*/
+								printf("Invalid selection\n"); 
+
+
+
+							break;	/*Switch-Case Break Default*/
 						}
+						/*SubMenu-B2 Switch Stop*/
+
+
 					break;
-						//b1menu stop
-						//exit
+					/*SubMenu-B2 Stop*/
+						
+
+
+			
 					case 3:
-						printf("Return to Main \n"); //prompt
-						system("cls"); // clear screen
-					break;
+						printf("Return to Main \n"); 
+						system("cls");	/*Clear Screen*/
 
-					default:
-						printf("Invalid selection\n"); // prompt
-					break;
+
+
+					break;				/*Switch-Case Break Case 3*/
+
+
+
+
+					default: /*Default Switch-Case Return*/
+						printf("Invalid selection\n"); 
+
+
+
+					break; /*Switch-Case Break Default*/
 				}
+
+
 			break;
+			/*SubMenu-B Switch Stop*/
 
-				//b submenu stop
-				//c submenu start
+			
+
+			/*SubMenu-C  Start*/
 			case 3:
-				system("cls"); // clear screen
-				cmenu:
-				printf("Radioactivity Menu\n");  //Prompt
-				printf("\t\t===================================\n");  //Prompt
-				printf("\t\tI     Choose one action           I\n");  //Prompt
-				printf("\t\tI=================================I\n");  //Prompt
-				printf("\t1. Mass Change\n");  //Prompt
-				printf("\t2. Energy Change\n");  //Prompt
-				printf("\t3. Return Main Menu\n");  //Prompt
-				printf("\tChoice: ");  //Prompt
-				scanf("%d", &cmenu); //Input using scanf
-				switch (cmenu) // switch case function
+				system("cls");	/*Clear Screen*/
+
+
+
+				cmenu: 			/*Goto Function*/
+				printf("Radioactivity Menu\n");  
+				printf("\t\t===================================\n");  
+				printf("\t\tI     Choose one action           I\n");  
+				printf("\t\tI=================================I\n");  
+				printf("\t1. Power of Lens\n");   		 /*Refer to Figure 6 SubMenu-C*/
+				printf("\t2. Linear Magnification\n");  
+				printf("\t3. Return Main Menu\n"); 
+
+
+
+
+				printf("\tChoice: ");  
+				scanf("%d", &cmenu);  /*User Input Scan*/
+
+
+
+
+				/*SubMenu-C Switch Start*/
+				switch (cmenu) /*switch-case Statement*/
 				{
+
+
+
+
 					case 1:
-						system("cls"); // clear screen
-						mass_energy:
+						system("cls"); /*Clear Screen*/
 
-						mass_change(); // call function
-						printf("Do you want to repeat ? (y/n)\n"); //Prompt
-						printf("\tChoice:"); //Prompt
-						scanf(" %c", &ch); //Input using scanf
 
-						if (ch == 'y' || ch == 'Y') //if else function
+						Power_of_Lens: /*Goto Function*/
+						Power_of_Lens(); /*CallBack Power_of_Lens Function*/
+
+
+
+						printf("Do you want to repeat ? (y/n)\n"); 
+						printf("\tChoice:"); 
+						scanf(" %c", &ch);   /*User Input Scan*/
+
+
+
+
+
+						if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 						{
-							system("cls"); // clear screen
-							goto mass_energy; // goto function
+							system("cls"); /*Clear Screen*/
+							goto Power_of_Lens;  /*Goto Function*/
 						}
+
+
+
+
 						else{
-							system("cls"); // clear screen
-							goto cmenu; // goto function
-							system("cls"); // clear screen
+							system("cls");	/*Clear Screen*/
+							goto cmenu; 	/*Goto Function*/
+							system("cls");	/*Clear Screen*/
 						}
-					break;
+
+
+
+					break; /*Switch-Case Break Case 1*/
+
+
+
 
 					case 2:
-						system("cls"); // clear screen
-						Energy_change:
-						energy_change(); //call function
-						printf("Do you want to repeat ? (y/n)\n"); //Prompt
-						printf("\tChoice:"); //Prompt
-						scanf(" %c", &ch); //Input using scanf
+						system("cls"); /*Clear Screen*/
 
-						if (ch == 'y' || ch == 'Y') //ifelse function
+
+
+						Linear_Magnification: 	/*Goto Function*/
+						Linear_Magnification(); /*CallBack  Linear_Magnification Function*/
+
+
+
+
+						printf("Do you want to repeat ? (y/n)\n"); 
+						printf("\tChoice:"); 
+						scanf(" %c", &ch); /*User Input Scan*/
+
+
+
+
+
+						if (ch == 'y' || ch == 'Y') /*IfElse Statement*/
 						{
-							system("cls"); // clear screen
-							goto Energy_change; // goto function
+							system("cls"); 				/*Clear Screen*/
+							goto Linear_Magnification;	/*Goto Function*/
 						}
+
+
+
+
 						else{
-							system("cls"); // clear screen
-							goto cmenu; // goto function
-							system("cls"); // clear screen
+							system("cls");	/*Clear Screen*/
+							goto cmenu; 	/*Goto Function*/
+							system("cls");	/*Clear Screen*/
 						}
-					break;
-					case 3:	//exit
-						printf("Return to Main \n"); //prompt
-						system("cls"); // clear screen
-						break;
+
+
+
+					break; /*Switch-Case Break Case 2*/
+
+
+
+
+					case 3:	
+						printf("Return to Main \n"); 
+						system("cls"); /*Clear Screen*/
+
+
+
+						break;/*Switch-Case Break Case 3*/
+
+
+
+
 					default:
 						printf("Invalid selection\n"); // prompt
-						break;
+
+
+
+
+					break; /*Switch-Case Break Default*/
 
 				}
 			break;
-				//c submenu stop
+			/*SubMenu-C Switch Stop*/
+
+
 		}
-	} while (option != 4);
+
+
+
+	} while (option != 4); /*Dowhile Statement*/
+
+
 
 	return 0;
+	/*return 0 means that the program will execute successfully and did what it was intended to do*/
+
 }
 
-// A menu start
-void velocity(){ //function
-float freq,lambda,velocity; //Variable declaration
+/*SubMenu-A Start*/
+
+
+void velocity(){ 			/* SubFunction*/
+
+float freq,lambda,velocity; /*Variable Declaration*/
+
+
+
+
 printf("===================================\n");
 printf("I        Velocity Formula         I\n");
-printf("I           V = f x λ            I\n");
+printf("I           V = f x λ            I\n"); /*Refer to Figure 7 Velocity Function*/
 printf("I=================================I\n");
-printf("Input Frequency:"); //Prompt
-scanf("%f", &freq); //Input using scanf
-printf("Input λ(Lambda):"); //Prompt
-scanf("%f", &lambda); //Input using scanf
-velocity=freq*lambda; // Calculation formula
-printf("Velocity = %.2f\n", velocity); //Display Output
+
+
+printf("Input Frequency:"); 
+scanf("%f", &freq);  /*User Input Scan Store as freq*/
+
+
+printf("Input λ(Lambda):");
+scanf("%f", &lambda);  /*User Input Scan Store as lambbda*/
+
+
+velocity=freq*lambda; /*Calculation Proccess Formula */
+
+
+printf("Velocity = %.2f m/s \n", velocity); /*Display Output*/
 
 }
+/*End of Function*/
 
-void frequency(){ //function
-float freq,lambda,velocity; //Variable declaration
+
+
+
+
+void frequency(){ /* SubFunction*/
+
+float freq,lambda,velocity; /*Variable Declaration*/
+
+
+
 printf("===================================\n");
 printf("I        frequency Formula         I\n");
-printf("I           F = V / λ            I\n");
+printf("I           F = V / λ            I\n"); /*Refer to Figure 8 Frequency Function*/
 printf("I=================================I\n");
-printf("Input Velocity:"); //Prompt
-scanf("%f", &velocity); //Input using scanf
-printf("Input λ(Lambda):"); //Prompt
-scanf("%f", &lambda); //Input using scanf
-freq=velocity/lambda; // Calculation formula
-printf("Frequenct = %.2f\n", freq); //Display Output
+
+
+
+
+printf("Input Velocity:");
+scanf("%f", &velocity); /*User Input Scan Store as velocity*/
+
+
+
+
+printf("Input λ(Lambda):");
+scanf("%f", &lambda); /*User Input Scan Store as lambbda*/
+
+
+
+freq=velocity/lambda; /*Calculation Proccess Formula */
+
+
+printf("Frequenct = %.2f Hz \n", freq); /*Display Output*/
 
 }
+/*End Of Function*/
 
-void wave_length(){ //function
-float freq,lambda,velocity; //Variable declaration
+void wave_length(){ /* SubFunction*/
+
+float freq,lambda,velocity; /*Variable Declaration*/
+
+
+
+
 printf("===================================\n");
 printf("I        Wave Length Formula      I\n");
-printf("I           V = f x λ            I\n");
+printf("I           V = f x λ            I\n"); /*Refer to Figure 9 Wave Length Function*/
 printf("I=================================I\n");
-printf("Input Frequency:"); //Prompt
-scanf("%f", &freq); //Input using scanf
-printf("Input Velocity:"); //Prompt
-scanf("%f", &velocity); //Input using scanf
-lambda=velocity/freq; // Calculation formula
-printf("λ(lambda) = %.2f\n", lambda); //Display Output
+
+
+
+printf("Input Frequency:"); 
+scanf("%f", &freq); /*User Input Scan Store as Freq*/
+
+
+
+printf("Input Velocity:"); 
+scanf("%f", &velocity); /*User Input Scan Store as velocity*/
+
+
+
+lambda=velocity/freq; /*Calculation Proccess Formula */
+
+
+
+printf("λ(lambda) = %.2f m \n", lambda); /*Display Output*/
 
 }
+/*End Of Function*/
+/*SubMenu-B Stop*/
 
-// A menu Stop
-// B menu start
-// b1 menu start
-void charge(){ //function
-float current,charge,time; //Variable declaration
+
+
+/*SubMenu-B Start*/
+/*SubMenu-B1 Start*/
+
+void charge(){ /* SubFunction*/
+
+float current,charge,time; /*Variable Declaration*/
+
+
+
 printf("===================================\n");
-printf("I        Charge  Formula  	      I\n");
+printf("I        Charge  Formula  	      I\n"); /*Refer to Figure 10 Charge Function*/
 printf("I           Q = I x t             I\n");
 printf("I=================================I\n");
-printf("Input Current:"); //Prompt
-scanf("%f",&current); //Input using scanf
-printf("Input Time:"); //Prompt
-scanf("%f", &time); //Input using scanf
-charge = current * time; // Calculation formula
-printf("Charge = %.2f\n",charge); //Display Output
+
+
+
+printf("Input Current:");
+scanf("%f",&current); /*User Input Scan Store as Current*/
+
+
+printf("Input Time:"); 
+scanf("%f", &time); /*User Input Scan Store as Time*/
+
+
+charge = current * time; /*Calculation Proccess Formula */
+
+
+
+printf("Charge = %.2f C \n",charge);  /*Display Output*/
 
 }
+/*End Of Function*/
 
-void current(){ //function
-float current,charge,time; //Variable declaration
+
+
+void current(){ /* SubFunction*/
+
+float current,charge,time; /*Variable Declaration*/
+
+
+
 printf("===================================\n");
 printf("I        Current  Formula  	      I\n");
-printf("I           I = Q x t             I\n");
+printf("I           I = Q x t             I\n");/*Refer to Figure 11 Current Function*/
 printf("I=================================I\n");
-printf("Input Charge:"); //Prompt
-scanf("%f",&charge); //Input using scanf
-printf("Input Time:"); //Prompt
-scanf("%f", &time); //Input using scanf
-current = charge * time;  // Calculation formula
-printf("Current = %.2f\n",current); //Display Output
+
+
+
+printf("Input Charge:"); 
+scanf("%f",&charge); /*User Input Scan Store as charge*/
+
+
+
+printf("Input Time:"); 
+scanf("%f", &time); /*User Input Scan Store as Time*/
+
+
+
+current = charge * time;  /*Calculation Proccess Formula */
+
+
+printf("Current = %.2f A \n",current); /*Display Output*/
 
 }
+/*End Of Function*/
 
-void time(){ //function
-float current,charge,time; //Variable declaration
+
+void time(){ /* SubFunction*/
+
+float current,charge,time; /*Variable Declaration*/
+
+
+
 printf("===================================\n");
 printf("I         Time Formula  	      I\n");
-printf("I           T = I x Q             I\n");
+printf("I           T = I x Q             I\n");/*Refer to Figure 12 Time Function*/
 printf("I=================================I\n");
-printf("Input Current:"); //Prompt
-scanf("%f",&current); //Input using scanf
-printf("Input Charge:"); //Prompt
-scanf("%f", &charge); //Input using scanf
-time = current * charge; // Calculation formula
-printf("Time = %.2f\n",time); //Display Output
+
+
+
+printf("Input Current:"); 
+scanf("%f",&current); /*User Input Scan Store as Current*/
+
+
+
+printf("Input Charge:");
+scanf("%f", &charge); /*User Input Scan Store as Charge*/
+
+
+
+time = current * charge; /*Calculation Proccess Formula */
+
+
+
+printf("Time = %.2f s \n",time); /*Display Output*/
 
 }
+/*End Of Function*/
+/*SubMenu-B1 Stop*/
 
-//b1 menu stop
-//b2 menu start
-void potential_differences(){ //function
-float voltage,energy,change; //Variable declaration
+
+/*SubMenu-B2 Start*/
+void potential_differences(){ /* SubFunction*/
+
+float voltage,energy,change; /*Variable Declaration*/
+
+
+
 printf("===================================\n");
 printf("I   Potential Difference Formula  I\n");
-printf("I           V = E / Q             I\n");
+printf("I           V = E / Q             I\n"); /*Refer to Figure 13 Potenctial Different Function*/
 printf("I=================================I\n");
-printf("Input Energy/Watt:"); //Prompt
-scanf("%f",&energy); //Input using scanf
-printf("Input Change:"); //Prompt
-scanf("%f",&change); //Input using scanf
-voltage=energy/change; // Calculation formula
-printf("Voltage = %.2f\n",voltage); //Display Output
+
+
+
+printf("Input Energy/Watt:");  
+scanf("%f",&energy); /*User Input Scan Store as energy*/
+
+
+
+printf("Input Change:"); 
+scanf("%f",&change); /*User Input Scan Store as change*/
+
+
+
+voltage=energy/change; /*Calculation Proccess Formula */
+
+
+
+printf("Voltage = %.2f V \n",voltage); /*Display Output*/
 
 }
+/*End of Function*/
 
-void energy(){ //function
-float voltage,energy,change; //Variable declaration
+
+void energy(){ /* SubFunction*/
+
+float voltage,energy,change; /*Variable Declaration*/
 printf("===================================\n");
 printf("I   	Energy Formula			  I\n");
-printf("I           E = V x Q             I\n");
+printf("I           E = V x Q             I\n"); /*Refer to Figure 14 Energy Function*/
 printf("I=================================I\n");
-printf("Input Voltage:"); //Prompt
-scanf("%f",&voltage); //Input using scanf
-printf("Input Change:"); //Prompt
-scanf("%f",&change); //Input using scanf
-energy=voltage*change; // Calculation formula
-printf("Energy = %.2f\n",energy); //Display Output
+
+
+
+
+printf("Input Voltage:"); 
+scanf("%f",&voltage); /*User Input Scan Store as Voltage*/
+
+
+
+printf("Input Change:"); 
+scanf("%f",&change); /*User Input Scan Store as Change*/
+
+
+
+energy=voltage*change; /*Calculation Proccess Formula */
+
+
+
+printf("Energy = %.2f J \n",energy); /*Display Output*/
 
 }
+/*End Of Function*/
 
-void change(){ //function
-float voltage,energy,change; //Variable declaration
+
+void change(){ /* SubFunction*/
+
+float voltage,energy,change; /*Variable Declaration*/
 printf("===================================\n");
 printf("I   	  Change Formula		  I\n");
-printf("I           Q = V x E             I\n");
+printf("I           Q = V x E             I\n");/*Refer to Figure 15 Change Function*/
 printf("I=================================I\n");
-printf("Input Voltage:"); //Prompt
-scanf("%f",&voltage); //Input using scanf
-printf("Input Energy:"); //Prompt
-scanf("%f",&energy); //Input using scanf
-change=voltage*energy; // Calculation formula
-printf("Change = %.2f\n",change); //Display Output
+
+
+
+
+printf("Input Voltage:"); 
+scanf("%f",&voltage);  /*User Input Scan Store as Voltage*/
+
+
+
+
+printf("Input Energy:"); 
+scanf("%f",&energy); /*User Input Scan Store as energy*/
+
+
+
+change=voltage*energy; /*Calculation Proccess Formula */
+
+
+printf("Change = %.2f C \n",change); /*Display Output*/
 
 }
-//b2 menu stop
-//b menu stop
-//c menu start
+/*End Of Function*/
+/*SubMenu-B2 Stop*/
+/*SubMenu-B Stop*/
 
-void mass_change(){ //function
-float mass,energy; //Variable declaration
-int constant = 299792458; // static variable declaration value 
+
+
+/*SubMenu-C Start*/
+
+void Power_of_Lens(){ /* SubFunction*/
+
+float power_of_lens,focal_length; /*Variable Declaration*/
+
+
 printf("===================================\n");
-printf("I   	Mass Change Formula		  I\n");
-printf("I           E= mc^2               I\n");
+printf("I   	Power Of Lens Formula	  I\n");
+printf("I           1/Focal Length        I\n");/*Refer to Figure 16 Power Of Lens Function*/
 printf("I=================================I\n");
-printf("Input Energy Change:"); //Prompt
-scanf("%f",&energy); //Input using scanf
-mass=energy * (constant*constant); // Calculation formula
-printf("Mass Change = %.2f\n",mass); //Display Output
-}
 
-void energy_change(){ //function
-float mass,energy; //Variable declaration
-int constant = 299792458; // static variable declaration value 
+
+printf("Focal length:"); 
+scanf("%f",&focal_length); /*User Input Scan Store as Focal Length*/
+
+
+
+power_of_lens=1/focal_length; /*Calculation Proccess Formula */
+
+
+printf("Power of Lens =  %.2f  \n",power_of_lens); /*Display Output*/
+
+
+}
+/*End Of Function*/
+
+
+void Linear_Magnification(){ /* SubFunction*/
+
+float LM,ID,OD; 			/*Variable Declaration*/
+
+
 printf("===================================\n");
-printf("I   	Energy Change Formula	  I\n");
-printf("I           E= mc^2               I\n");
+printf("I  Linear Magnification Formula	  I\n");
+printf("I           LM=ID/OD              I\n");/*Refer to Figure 17 Linear Magnification Function*/
 printf("I=================================I\n");
-printf("Input Mass Change:"); //Prompt
-scanf("%f",&mass); //Input using scanf
-energy=mass * (constant*constant);  // Calculation formula
-printf("Energy Change = %.2f\n",energy); //Display Output
+
+
+
+printf("Object Distance: ");
+scanf("%f",&OD);/*User Input Scan Store as OD*/
+
+
+
+
+printf("Image Distance:");
+scanf("%f",&ID); /*User Input Scan Store as ID*/
+
+LM = ID/OD;  /*Calculation Proccess Formula */
+
+printf("Linear Magnification =  %.2f cm \n",LM); /*Display Output*/
 
 }
-
-//c menu stop
-// end code
+/*End Of Function*/
+/*SubMenu-C Stop*/
+/*End*/
